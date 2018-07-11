@@ -1,12 +1,17 @@
 const anime = require('/usr/local/lib/node_modules/npm/node_modules/animejs/');
 
-var blue = anime({
-  targets: '.blue',
-  translateY: 200,
-  translateX: 100,
+var white = anime({
+  targets: '.white',
+  translateY: 300,
   loop: true,
+  duration: 7000,
   direction: 'alternate',
-  duration: 3000,
+  backgroundColor: [
+    {value: '#ffffff'},
+    {value: '#ffff66'},
+    {value: '#ffff1a'},
+  ],
+  easing: 'linear',
   autoplay: true
 });
 
@@ -27,11 +32,3 @@ var notRed = anime({
   translateY: 200,
   autoplay: false
 });
-
-document.querySelector('.play-blue').onclick = blue.restart;
-
-document.querySelector('.play-red-blue').onclick = redBlue.restart;
-
-document.querySelector('.play-even').onclick = even.restart;
-
-document.querySelector('.play-not-red').onclick = notRed.restart;
