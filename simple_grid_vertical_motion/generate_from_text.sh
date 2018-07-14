@@ -23,6 +23,7 @@ COLORED_DIV="<div class=\"square white\"></div>"
 BLANK_DIV="<div class=\"square blank\"></div>"
 
 FILE_NAME="lacework_output.html"
+INPUT_FILE_NAME="./lacework_text.txt"
 
 ####################################################
 
@@ -47,7 +48,7 @@ touch $FILE_NAME
 #Add the document open
 echo $DOCUMENT_OPENING >> $FILE_NAME
 
-file="./lacework_text.txt"
+file=$INPUT_FILE_NAME
 while IFS= read -r line
 do
 	echo $DIV_ROW_OPEN >> $FILE_NAME
