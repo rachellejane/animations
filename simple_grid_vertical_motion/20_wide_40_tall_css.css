@@ -1,0 +1,50 @@
+body {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-left: 100px;
+  background-color: #f9ecf2;
+}
+
+button {
+  background: orange;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Lato';
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background: blue;
+}
+
+.square {
+  pointer-events: none;
+  position: relative;
+  opacity: .3;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  background-color: cornflowerblue;
+  display: inline-block;
+}
+
+.white {
+  background: black;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background: black;
+}
+
+.controls {
+  margin-top: 250px;
+}
