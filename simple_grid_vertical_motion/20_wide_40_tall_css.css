@@ -3,7 +3,7 @@ body {
   font-weight: 300;
   font-size: 1.2em;
   margin-left: 100px;
-  background-color: white;
+  background-color: #ecffaf;
 }
 
 button {
@@ -31,6 +31,19 @@ button:hover {
   margin: 2px;
   background-color: blue;
   display: inline-block;
+  z-index: 1;
+}
+
+.rectangle {
+  pointer-events: none;
+  position: absolute;
+  opacity: .2;
+  width: 30px;
+  height: 50px;
+  margin: 2px;
+  background-color: blue;
+  display: inline-block;
+  z-index: 0;
 }
 
 .white {

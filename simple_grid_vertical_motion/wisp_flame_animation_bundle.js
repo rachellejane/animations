@@ -1,16 +1,31 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const anime = require('/usr/local/lib/node_modules/npm/node_modules/animejs/');
 
-var white = anime({
-  targets: '.white',
+var group_1 = anime({
+  targets: '.group_1',
   translateY: 300,
   loop: true,
   duration: 10000,
   direction: 'alternate',
   backgroundColor: [
     {value: '#ffffff'},
-    {value: '#ffff66'},
-    {value: '#ffff1a'},
+    {value: '#f7e6ff'},
+    {value: '#e6b3ff'},
+  ],
+  easing: 'linear',
+  autoplay: true
+});
+
+var group_2 = anime({
+  targets: '.group_2',
+  translateY: 100,
+  loop: true,
+  duration: 10000,
+  direction: 'alternate',
+  backgroundColor: [
+    {value: '#ffffff'},
+    {value: '#f7e6ff'},
+    {value: '#e6b3ff'},
   ],
   easing: 'linear',
   autoplay: true
