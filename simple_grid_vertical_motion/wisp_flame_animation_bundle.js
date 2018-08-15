@@ -8,28 +8,14 @@ var group_1 = anime({
   duration: 10000,
   direction: 'alternate',
   backgroundColor: [
+    {value: '#cbd1d8'},
+    {value: '#fffaa0'},
     {value: '#ffffff'},
-    {value: '#f7e6ff'},
-    {value: '#e6b3ff'},
   ],
   easing: 'linear',
   autoplay: true
 });
 
-var group_2 = anime({
-  targets: '.group_2',
-  translateY: 100,
-  loop: true,
-  duration: 10000,
-  direction: 'alternate',
-  backgroundColor: [
-    {value: '#ffffff'},
-    {value: '#f7e6ff'},
-    {value: '#e6b3ff'},
-  ],
-  easing: 'linear',
-  autoplay: true
-});
 
 
 },{"/usr/local/lib/node_modules/npm/node_modules/animejs/":2}],2:[function(require,module,exports){
